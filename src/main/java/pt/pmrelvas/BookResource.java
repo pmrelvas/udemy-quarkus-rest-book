@@ -5,11 +5,11 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/hello")
-public class GreetingResource {
+@Path("/api/books")
+public class BookResource {
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public String hello() {
         return "Hello from RESTEasy Reactive";
     }
